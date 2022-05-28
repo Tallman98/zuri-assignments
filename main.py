@@ -1,25 +1,26 @@
-# Check if two words are anagrams 
-# Example:
-# find_anagrams("hello", "check") --> False
-# find_anagrams("below", "elbow") --> True
+class Student:
+    # [assignment] Skeleton class. Add your code here
+    def __init__(self, name, age: int, track, score: float):
+        self.name = name
+        self.age = age
+        self.track = track
+        self.score = score
 
+        def change_name(self, new_name):
+            self.name = new_name
+            print(self.name)
+            return
 
-def find_anagram(word, anagram):
-    # [assignment] Add your code here
-    #return True
+        def change_age(self, new_age):
+            self.age = new_age
+            print(self.age)
+            return
 
-    if(len(word)) == len(anagram):
-        sorted_str1 = sorted(word)
-        sorted_str2 = sorted(anagram)
+        def add_track(self, new_track):
+            self.track = new_track
+            return
 
-        if sorted_str1 == sorted_str2:
-            print("\nTrue")
-
-        else:
-            print("\nFalse")
-
-    else:
-        print(word  + "and" + anagram + "are not anagrams")
-
-find_anagram("team", "meat")
+        def get_score(self):
+            print(self.score)
+            return    
 
